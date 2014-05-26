@@ -1,0 +1,9 @@
+Package: QDweka
+Title: Quick and Dirty Command Line Weka for R
+Version: 0.1
+Authors@R: "First Last <belmartin@outlook.com> [aut, cre]"
+Description: Quick and Dirty Command Line Weka for R
+Depends:
+    R (>= 3.1.0)
+License: GLP
+LazyData: true
