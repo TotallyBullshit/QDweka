@@ -12,8 +12,8 @@
 cmd_j48 <- function(C, M, data = "data/glass.arff", CLASSPATH = "export CLASSPATH=/Users/mbtangotan/Desktop/weka-3-7-11/weka.jar"){
   id <- seq_along(C)
   CP <- CLASSPATH
-  cmd <- sprintf("java weka.classifiers.trees.J48 -C %s -M %s -t data/glass.arff -x 10 > results%s.txt", 
-                 C, M, id)
+  cmd <- sprintf("java weka.classifiers.trees.J48 -C %s -M %s -t %s -x 10 > results%s.txt", 
+                 C, M, data, id)
   cmd <- paste(CP, cmd, sep = ";")
   cm <- list(id=id, cmd=cmd)
   cm
