@@ -5,10 +5,9 @@
 #' 
 #' @param model
 #' Output of `j48()`
-#' @example
-#' # Not Run
-#' # output <- j48(cmd)
-#' # models <- parse_j48(output)
+#' ## Not Run
+#' ## output <- j48(cmd)
+#' ## models <- parse_j48(output)
 #' @export
 parse_j48 <- function(model){
   result <- list(); res <- list()

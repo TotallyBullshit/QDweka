@@ -2,3 +2,4 @@
 
 export(cmd_j48)
 export(j48)
+export(parse_j48)
