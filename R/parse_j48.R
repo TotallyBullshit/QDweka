@@ -34,7 +34,7 @@ parse_j48 <- function(model){
     
     tree_st <- grep("J48 pruned tree", model[[i]])
     tree_end <- grep("Number of Leaves", model[[i]]); tree_end <- (tree_end - 1)
-    tree <- list(tree=model[[i]][tree_st:tree_end])
+    tree <- model[[i]][tree_st:tree_end]
     
     result <- list(options=options, tree=tree, correct=correct, 
                    number_leaves=number_leaves, tree_size=tree_size,
